@@ -3,10 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
     <title>CodeCademy Project</title>
   </head>
   <body>
-    <h1>Rock Scissors Paper Game</h1>
+    <div class="container">
+      <div class="gameboard">
+        <div class="header">
+          <h1>Rock Scissors Paper</h1>
+          <h4>A CodeCademy Project</h4>
+        </div>
+
+        <div class="move">
+          <h4>Chooce your move</h4>
+          <div class="options">
+            <div class="rock">Rock</div>
+            <div class="scissors">Scissors</div>
+            <div class="paper">Paper</div>
+          </div>
+        </div>
+
+        <div class="result"></div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
