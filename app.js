@@ -1,4 +1,3 @@
-console.log('Hi, wanna play rock scissors paper game with me?')
 
 //  Get user choice
 const getUserChoice = userInput => {
@@ -67,7 +66,7 @@ const determineWinner = (userChoice, computerChoice) => {
 
 // Let's start to play the game
 const playGame = () => {
-  const userChoice = getUserChoice('bomb');
+  const userChoice = getUserChoice('paper');
   const computerChoice = getComputerChoice();
   console.log('You threw: ' + userChoice);
   console.log('The computer threw: ' + computerChoice);
