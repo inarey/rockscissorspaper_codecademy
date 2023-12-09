@@ -1,13 +1,17 @@
-
 //  Get user choice
-const getUserChoice = userInput => {
+const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
 
   // conditions if the userInput is equal to rock, scissors, paper, bomb
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
+  if (
+    userInput === 'rock' ||
+    userInput === 'paper' ||
+    userInput === 'scissors' ||
+    userInput === 'bomb'
+  ) {
     return userInput;
   } else {
-    console.log('Error')
+    console.log('Error');
   }
 };
 
@@ -26,11 +30,10 @@ const getComputerChoice = () => {
       return 'paper';
       break;
   }
-}
+};
 
 // Condition to determine who is the winner
 const determineWinner = (userChoice, computerChoice) => {
-
   if (userChoice === computerChoice) {
     return 'Game is a tie!';
   }
@@ -47,7 +50,7 @@ const determineWinner = (userChoice, computerChoice) => {
     if (computerChoice === 'scissors') {
       return 'The computer win!';
     } else {
-      return 'You win!'
+      return 'You win!';
     }
   }
 
@@ -60,9 +63,9 @@ const determineWinner = (userChoice, computerChoice) => {
   }
 
   if (userChoice === 'bomb') {
-    return 'You rock!'
+    return 'You rock!';
   }
-}
+};
 
 // Let's start to play the game
 const playGame = () => {
@@ -70,7 +73,7 @@ const playGame = () => {
   const computerChoice = getComputerChoice();
   console.log('You threw: ' + userChoice);
   console.log('The computer threw: ' + computerChoice);
-  console.log(determineWinner(userChoice, computerChoice))
+  console.log(determineWinner(userChoice, computerChoice));
 };
 
-playGame()
+playGame();
